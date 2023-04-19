@@ -326,7 +326,6 @@
 				791EEB441957DA9E009DC47A /* Frameworks */,
 				791EEB451957DA9E009DC47A /* Resources */,
 				C3A9805C86E8A61584BABF97 /* [CP] Embed Pods Frameworks */,
-				E4D44BB0535BEE1CDF43FF0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -402,7 +401,6 @@
 				792DAFD71C015E6C008FBE10 /* Frameworks */,
 				792DAFD81C015E6C008FBE10 /* Resources */,
 				761FF0FAE4998F30F126369A /* [CP] Embed Pods Frameworks */,
-				E461FA058EAD5EAADFB4F7F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -468,6 +466,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -561,7 +560,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KRLCollectionViewGridLayout-tvOSTests/Pods-KRLCollectionViewGridLayout-tvOSTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KRLCollectionViewGridLayout-tvOSTests/Pods-KRLCollectionViewGridLayout-tvOSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OCHamcrest-tvOS/OCHamcrest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -570,7 +569,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KRLCollectionViewGridLayout-tvOSTests/Pods-KRLCollectionViewGridLayout-tvOSTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KRLCollectionViewGridLayout-tvOSTests/Pods-KRLCollectionViewGridLayout-tvOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C3A9805C86E8A61584BABF97 /* [CP] Embed Pods Frameworks */ = {
@@ -579,7 +578,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KRLCollectionViewGridLayout-iOSTests/Pods-KRLCollectionViewGridLayout-iOSTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KRLCollectionViewGridLayout-iOSTests/Pods-KRLCollectionViewGridLayout-iOSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OCHamcrest-iOS/OCHamcrest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -588,7 +587,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KRLCollectionViewGridLayout-iOSTests/Pods-KRLCollectionViewGridLayout-iOSTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KRLCollectionViewGridLayout-iOSTests/Pods-KRLCollectionViewGridLayout-iOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DDE5D11EBE6D21D07DB34163 /* [CP] Check Pods Manifest.lock */ = {
@@ -607,36 +606,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E461FA058EAD5EAADFB4F7F2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KRLCollectionViewGridLayout-tvOSTests/Pods-KRLCollectionViewGridLayout-tvOSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E4D44BB0535BEE1CDF43FF0B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KRLCollectionViewGridLayout-iOSTests/Pods-KRLCollectionViewGridLayout-iOSTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -785,7 +754,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Classes/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.klundberg.KRLCollectionViewGridLayout;
@@ -813,7 +782,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Classes/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.klundberg.KRLCollectionViewGridLayout;
